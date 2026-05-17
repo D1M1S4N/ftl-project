@@ -1,0 +1,9 @@
+hospital_id,modality,label,patients
+1,FLAIR,control,15
+1,FLAIR,ms,23
+2,FLAIR,control,15
+2,FLAIR,ms,22
+3,T1w,control,15
+3,T1w,ms,22
+4,T1w,control,14
+4,T1w,ms,22

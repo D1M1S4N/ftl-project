@@ -1,0 +1,9 @@
+experiment_name,strategy,strategy_variant,proximal_mu,modality,accuracy,f1_score,sensitivity,specificity
+FTL_FLAIR_vs_T1w_FedAvg,FedAvg,FedAvg,0.0,FLAIR,1.0,1.0,1.0,1.0
+FTL_FLAIR_vs_T1w_FedAvg,FedAvg,FedAvg,0.0,T1w,1.0,1.0,1.0,1.0
+FTL_FLAIR_vs_T1w_FedProx_mu_0p001,FedProx,FedProx_mu_0p001,0.001,FLAIR,1.0,1.0,1.0,1.0
+FTL_FLAIR_vs_T1w_FedProx_mu_0p001,FedProx,FedProx_mu_0p001,0.001,T1w,1.0,1.0,1.0,1.0
+FTL_FLAIR_vs_T1w_FedProx_mu_0p01,FedProx,FedProx_mu_0p01,0.01,FLAIR,1.0,1.0,1.0,1.0
+FTL_FLAIR_vs_T1w_FedProx_mu_0p01,FedProx,FedProx_mu_0p01,0.01,T1w,1.0,1.0,1.0,1.0
+FTL_FLAIR_vs_T1w_FedProx_mu_0p1,FedProx,FedProx_mu_0p1,0.1,FLAIR,0.9615384615384616,0.9613654711105986,0.9166666666666666,1.0
+FTL_FLAIR_vs_T1w_FedProx_mu_0p1,FedProx,FedProx_mu_0p1,0.1,T1w,1.0,1.0,1.0,1.0

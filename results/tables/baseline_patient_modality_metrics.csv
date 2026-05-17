@@ -1,0 +1,15 @@
+baseline,mode,train_modality,eval_modality,accuracy,f1_score,sensitivity,specificity
+centralized_all,centralized,,FLAIR,1.0,1.0,1.0,1.0
+centralized_all,centralized,,T1w,1.0,1.0,1.0,1.0
+local_only_FLAIR,modality,FLAIR,FLAIR,1.0,1.0,1.0,1.0
+local_only_FLAIR,modality,FLAIR,T1w,0.4545454545454545,0.2840909090909091,1.0,0.0
+local_only_T1w,modality,T1w,FLAIR,0.5384615384615384,0.3769230769230768,0.0,1.0
+local_only_T1w,modality,T1w,T1w,1.0,1.0,1.0,1.0
+local_only_hospital_1_FLAIR,local,,FLAIR,1.0,1.0,1.0,1.0
+local_only_hospital_1_FLAIR,local,,T1w,0.4545454545454545,0.2840909090909091,1.0,0.0
+local_only_hospital_2_FLAIR,local,,FLAIR,1.0,1.0,1.0,1.0
+local_only_hospital_2_FLAIR,local,,T1w,0.9090909090909092,0.9090909090909092,1.0,0.8333333333333334
+local_only_hospital_3_T1w,local,,FLAIR,0.5384615384615384,0.3769230769230768,0.0,1.0
+local_only_hospital_3_T1w,local,,T1w,1.0,1.0,1.0,1.0
+local_only_hospital_4_T1w,local,,FLAIR,0.5384615384615384,0.3769230769230768,0.0,1.0
+local_only_hospital_4_T1w,local,,T1w,1.0,1.0,1.0,1.0

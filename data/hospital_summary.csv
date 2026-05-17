@@ -1,0 +1,5 @@
+hospital_id,modality,patients,ms_patients,control_patients,slices,ms_slices,control_slices,ms_patient_ratio
+1,FLAIR,38,23,15,3458,2093,1365,0.605
+2,FLAIR,37,22,15,3367,2002,1365,0.595
+3,T1w,37,22,15,3367,2002,1365,0.595
+4,T1w,36,22,14,3276,2002,1274,0.611

@@ -1,0 +1,39 @@
+experiment_name: "FTL_FLAIR_vs_T1w_FedProx_mu_0p1"
+seed: 42
+
+data:
+  base_path: "."
+  total_clients: 4
+  client_mapping:
+    client_1: "FLAIR"
+    client_2: "FLAIR"
+    client_3: "T1w"
+    client_4: "T1w"
+  batch_size: 32
+  validation_split: 0.2
+  label_source: "csv_label_id"
+  assignment_file: "data/patient_assignment.csv"
+  global_test_file: "data/global_test.csv"
+
+model:
+  architecture: "ResNet18_2D"
+  in_channels: 1
+  num_classes: 2
+
+federated_learning:
+  strategy: "FedProx"
+  num_rounds: 10
+  aggregation_method: "simple_mean"
+  proximal_mu: 0.1
+
+client_training:
+  local_epochs: 2
+  learning_rate: 0.0001
+  optimizer: "Adam"
+
+server_evaluation:
+  enabled: true
+  device: "cpu"
+
+results:
+  output_dir: "results"
