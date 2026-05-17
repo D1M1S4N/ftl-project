@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "proyecto-af-mri"
+version = "1.0.0"
+description = "Proyecto de Aprendizaje Federado para imágenes MRI"
+dependencies = [
+    "flwr>=1.9.0",
+    "ray",
+    "torch",
+    "torchvision",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pillow",
+    "pyyaml",
+    "scikit-learn"
+]
+
+[tool.flwr.app]
+publisher = "local"
+
+[tool.flwr.app.components]
+serverapp = "src.server_app:app"
+clientapp = "src.client_app:app"
+
+[tool.flwr.app.config]
+config_path = "configs/experiment_fedavg.yaml"
